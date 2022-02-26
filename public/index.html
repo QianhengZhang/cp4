@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+  Name: Joshua Zhang
+  Date: February 25, 2022
+  Section: CSE 154 AB
+  This is the index.html page for my cp5 project. It has
+  an introduction, a body section for shelf and an editing
+  section for user to customize this bookshelf in the ways
+  they want. It provides a view side for this project.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CP4</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Roboto+Serif:wght@600&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1>A Bookshelf</h1>
+    <section id="introduction">
+      <p>A public bookshelf made by Joshua Zhang</p>
+      <p>You can also use double click to delete a book</p>
+    </section>
+    <hr>
+    <br>
+    <section id="shelf">
+    </section>
+    <hr>
+    <section id="Editing">
+      <h2>Editing your bookshelf here</h2>
+      <label for="name">Enter book title</label>
+      <input type="text" id="book-title" value=""><br>
+      <label for="name">Enter author name</label>
+      <input type="text" id="author-name" value=""><br>
+      <p>
+        <label><input type="radio" name="diff" value="0" checked>Add</label>
+        <label><input type="radio" name="diff" value="1">Delete</label>
+        <label><input type="radio" name="diff" value="2">Get a random book</label>
+      </p>
+      <button id="search-btn">Confirm</button>
+      <br>
+      <br>
+      <div id="message"></div>
+    </section>
+  </body>
+</html>

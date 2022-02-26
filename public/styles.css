@@ -1,0 +1,47 @@
+body {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F9E4D4;
+
+}
+
+#shelf {
+  display: flex;
+  margin-left: 15%;
+  margin-right: 10%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 290px;
+  width: 220px;
+  background-color: #54BAB9;
+  margin-bottom: 20px;
+  margin: 0px 24px 20px;
+  opacity: 90%;
+}
+
+.author {
+  font-family: 'Merriweather', serif;
+}
+
+a, .title {
+  font-family: 'Roboto Serif', sans-serif;
+}
+
+.title {
+  font-size: 20px;
+}
+
+a {
+  padding-bottom: 3px;
+}
+
+hr {
+  width: 80%
+}
