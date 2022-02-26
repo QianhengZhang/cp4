@@ -11,9 +11,6 @@
 
 'use strict';
 
-const ERROR_CODE = 400;
-const PORT_NUMBER = 8000;
-
 const express = require('express');
 const fs = require('fs').promises;
 const multer = require('multer');
@@ -51,7 +48,7 @@ app.get('/load/:target', async (req, res) => {
     }
   } else {
     res.type('text');
-    res.status(ERROR_CODE).send('The request is not valid');
+    res.status(400).send('The request is not valid');
   }
 });
 
@@ -81,7 +78,7 @@ app.post('/delete', async (req, res) => {
     res.send(title + " by " + author + " is deleted!");
   } else {
     res.type('text');
-    res.status(ERROR_CODE).send('The input for author and reader is invalid!');
+    res.status(400).send('The input for author and reader is invalid!');
   }
 });
 
@@ -107,7 +104,7 @@ app.post('/add', async (req, res) => {
     res.send(book["title"] + " by " + book["author"] + " is added!");
   } else {
     res.type('text');
-    res.status(ERROR_CODE).send('The input for author and reader is invalid!');
+    res.status(400).send('The input for author and reader is invalid!');
   }
 });
 
@@ -131,5 +128,5 @@ function checkValue(title, author, data) {
 }
 
 app.use(express.static('public'));
-const PORT = process.env.PORT || PORT_NUMBER;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT);

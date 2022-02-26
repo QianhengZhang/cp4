@@ -1,9 +1,18 @@
+/*
+  Name: Joshua Zhang
+  Date: February 25, 2022
+  Section: CSE 154 AB
+  This is the styles.css file used in cp4. It gives the project
+  a light color impression and styled book titles and author
+  names. It enables the content in the middle of the page to
+  be listed as a real bookshelf.
+*/
+
 body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   background-color: #F9E4D4;
-
 }
 
 #shelf {
@@ -21,7 +30,6 @@ body {
   height: 290px;
   width: 220px;
   background-color: #54BAB9;
-  margin-bottom: 20px;
   margin: 0px 24px 20px;
   opacity: 90%;
 }
@@ -43,5 +51,5 @@ a {
 }
 
 hr {
-  width: 80%
+  width: 80%;
 }
